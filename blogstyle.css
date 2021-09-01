@@ -99,7 +99,10 @@ section {
   margin: 80px auto 50px auto;
   background-color: rgb(255, 255, 255);
   -webkit-box-shadow: 3px 3px 0px 0px #d6d6d6, 6px 6px 0px 0px #9c9c9c, -11px 32px 8px -5px rgba(0,0,0,0); 
-  box-shadow: 3px 3px 0px 0px #d6d6d6, 6px 6px 0px 0px #9c9c9c, -11px 32px 8px -5px rgba(0,0,0,0);
+  box-shadow:
+    3px 3px 0px 0px #d6d6d6,
+    6px 6px 0px 0px #9c9c9c,
+    -11px 32px 8px -5px rgba(0,0,0,0);
 }
 
 @keyframes card-ani1 {
@@ -235,12 +238,12 @@ section {
   margin: auto;
   width: 420px;
   height: 300px;
-  border: solid 1em rgb(122, 122, 122);
+  border: solid 1em rgb(0, 0, 0);
   border-radius:.5em;
   text-align: center;
   background-color: #979797;
-  -webkit-box-shadow: 5px 5px 0px 0px #6b6b6b; 
-  box-shadow: 5px 5px 0px 0px #6b6b6b;
+  -webkit-box-shadow: 5px 5px 0px 0px #000000; 
+  box-shadow: 5px 5px 0px 0px #000000;
 }
 
 .stand:before {
@@ -269,13 +272,18 @@ section {
 .portfolio span {
   font-weight: bolder;
   color: black;
+  position: relative;
+  top: -6px;
 }
 
 .portfolio img,
 .portfolio a img {
   height: 300px;
   width: 420px;
-  background-color: #979797;
+  box-shadow:
+    -10px 0 40px rgb(255, 255, 255),
+    10px 0 40px rgb(255, 255, 255);
+
 }
 
 
